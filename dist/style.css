@@ -1,0 +1,74 @@
+body{
+  position: relative;
+}
+
+.navbar{
+  position:fixed;
+  top: 1px;
+  left: 0px;
+  background-color: #ed5934;
+  width: 70vw;
+  height: 5vh;
+}
+
+#welcome-section{
+  position: relative;
+  top: 40px;
+  height: 100vh;
+  width: 70vw;
+}
+
+#projects{
+  position: relative;
+  top: 30px;
+  height: 70vh;
+  width: 70vw;
+  background-color: #34d5eb;
+}
+  
+#div-projects{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "uno 
+                          dos  
+                          tres";
+      
+    
+  }
+
+#project1{ 
+  background:LightSkyBlue;
+  grid-area: uno;
+}
+#project2{
+  background:LightSalmon;
+  grid-area:dos;
+}
+#project3{
+  background:PaleTurquoise;
+  grid-area:tres;
+}
+
+#profile{
+  position: relative;
+  top: 30px;
+  height: 30vh;
+  width: 70vw;
+  background-color: #5234eb;
+}
+
+@media(max-width: 100em){
+  #div-projects{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "uno" 
+                          "dos" 
+                          "tres";                           
+  }
+}
